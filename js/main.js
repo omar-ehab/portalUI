@@ -23,13 +23,14 @@ $(window).resize(function () {
     
 });
 /*******************to top button********************/
+
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topBtn").style.display = "block";
+} else {
+    document.getElementById("topBtn").style.display = "none";
+}
 document.body.onload = function () {
     "use strict";
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("topBtn").style.display = "block";
-    } else {
-        document.getElementById("topBtn").style.display = "none";
-    }
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementById("topBtn").style.display = "block";
@@ -107,3 +108,5 @@ $(".map .cont ul li").mouseleave(function () {
     "use strict";
     $(this).children().css("color", "#6c6d70");
 });
+
+
