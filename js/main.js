@@ -107,5 +107,3 @@ $(".map .cont ul li").mouseleave(function () {
     "use strict";
     $(this).children().css("color", "#6c6d70");
 });
-
-
