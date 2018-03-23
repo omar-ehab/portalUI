@@ -22,7 +22,23 @@ $(window).resize(function () {
     }
     
 });
+/*******************to top button********************/
 
+function scrollFunction() {
+    "use strict";
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("topBtn").style.display = "block";
+    } else {
+        document.getElementById("topBtn").style.display = "none";
+    }
+}
+window.onscroll = function () {"use strict"; scrollFunction(); };
+
+$('#topBtn').click(function () {
+	"use strict";
+    $('html, body').animate({scrollTop : 0}, 800);
+    return false;
+});
 /*******************header icons*********************/
 $(".description-ico").on('click', function () {
     "use strict";
@@ -86,5 +102,3 @@ $(".map .cont ul li").mouseleave(function () {
     "use strict";
     $(this).children().css("color", "#6c6d70");
 });
-
-
