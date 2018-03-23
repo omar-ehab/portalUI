@@ -83,7 +83,7 @@ $(".nav-item a").mouseover(function () {
     e.preventDefault();
     $("html, body").animate({
         scrollTop: $($(this).data("scroll")).offset().top
-    }, 1000);
+    }, 800);
 });
 /**********************our projects*************************/
 
