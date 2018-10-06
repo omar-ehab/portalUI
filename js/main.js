@@ -1,7 +1,7 @@
 /********************loader*******************/
 $(window).load(function () {
     "use strict";
-    $('.loading').fadeOut(500, function(){ $('#loader').remove(); } );
+    $('.loading').fadeOut(500, function(){ $('.loading').remove(); } );
     $("body").css("overflow", "auto");
 });
 /***********responsive of settings***************/
